@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARG: Bölüm 7</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>Bölüm 7</h1>
+    <p>Altıncı bölümü geçtin. Beni gerçekten şaşırtıyorsun.</p>
+    <p>Soru: Bu oyun en tehlikeli oyun olarak biliniyor ve bu oyun hiçte çocuklara göre değil. Bu oyun nedir?</p>
+    <form action="Part8.html" method="post" id="form2">
+        <label for="password">Cevabi yazin:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Next Episode">
+    </form>
+    <footer>
+        <p>Created by IMAGINE.</p>
+        <p>Copyright © 2024 IMAGINE. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("form2").onsubmit = function() {
+            var password = document.getElementById("password").value;
+            if (password === "RUS RULETİ") {
+                window.location.href = "https://www.akjaeah.github.io/z-f-8";
+                return true;
+            } else {
+                alert("Yanliş kod. Bence daha iyi düşünmelisin");
+                return false;
+            }
+        };
+    </script>
+</body>
+</html>
