@@ -21,13 +21,12 @@
     </footer>
     <script>
         document.getElementById("form2").onsubmit = function() {
+            event.preventDefault();
             var password = document.getElementById("password").value;
-            if (password === "RUS RULETİ") {
-                window.location.href = "https://www.akjaeah.github.io/z-f-8";
-                return true;
+            if (password.toUpperCase() === "RUS RULETİ") {
+                window.location.href = "https://akjaeah.github.io/l-x-7/";
             } else {
-                alert("Yanliş kod. Bence daha iyi düşünmelisin");
-                return false;
+                alert("Yanlış kod. Bence daha iyi düşünmelisin!");
             }
         };
     </script>
